@@ -1,0 +1,30 @@
+[status]
+description = "Shows status"
+[status.git]
+run = "git -c color.ui=always status -s || true; git -c color.ui=always --no-pager log --branches --not --remotes --simplify-by-decoration --decorate --oneline || true; git -c color.ui=always --no-pager stash list"
+[status.jj]
+run = "TERM=xterm-color jj status"
+
+[build]
+description = "Runs build scripts"
+[build.make]
+run = "make"
+
+[recreate]
+description = "Downloads repositories"
+[recreate.git]
+run = "git -c color.ui=always clone $(url)"
+
+[fetch]
+description = "Downloads changes"
+[fetch.git]
+run = "git -c color.ui=always fetch"
+[fetch.jj]
+run = "TERM=xterm-color jj git fetch"
+
+[pull]
+description = "Downloads changes"
+[pull.git]
+run = "git -c color.ui=always fetch && git -c color.ui=always merge"
+[pull.jj]
+run = "TERM=xterm-color jj git fetch && jj new trunk"

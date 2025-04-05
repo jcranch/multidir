@@ -1,0 +1,11 @@
+["/home/james/Diary"]
+tags = ["git", "default", "all"]
+url = "tchico.cranch.uk:~/git-personal/Diary"
+
+["/home/james/Teaching"]
+tags = ["git", "default", "all"]
+url = "tchico.cranch.uk:~/git-personal/Teaching"
+
+["/home/james/Programming"]
+tags = ["git","vcs","gitignore","default","all"]
+

@@ -1,0 +1,71 @@
+## Version control systems
+
+[[recipes]]
+tags = ["jj", "vcs", "gitignore", "default"]
+files = [".jj"]
+
+[[recipes]]
+tags = ["git", "vcs", "gitignore", "default"]
+files = [".git"]
+
+[[recipes]]
+tags = ["svn", "vcs", "default"]
+files = [".svn"]
+
+[[recipes]]
+tags = ["pijul", "vcs", "default"]
+files = [".pijul"]
+
+[[recipes]]
+tags = ["bazaar", "vcs", "default"]
+files = [".bzr"]
+
+[[recipes]]
+tags = ["breezy", "vcs", "default"]
+files = [".brz"]
+
+[[recipes]]
+tags = ["mercurial", "vcs", "default"]
+files = [".hg"]
+
+[[recipes]]
+tags = ["darcs", "vcs", "default"]
+files = ["_darcs"]
+
+
+## Build systems
+
+[[recipes]]
+tags = ["make", "build"]
+files = ["Makefile"]
+discover = false
+
+[[recipes]]
+tags = ["haskell-stack", "build"]
+files = ["package.yaml", "stack.yaml"]
+discover = false
+
+[[recipes]]
+tags = ["haskell-cabal", "build"]
+globs = ["*.cabal"]
+discover = false
+
+
+## Assorted data
+
+[[recipes]]
+tags = ["gitignore"]
+files = [".gitignore"]
+discover = false
+
+[[recipes]]
+tags = ["changelog"]
+files = ["CHANGELOG.md"]
+discover = false
+
+
+## It's convenient to be able to refer to all repositories
+
+[[recipes]]
+tags = ["all"]
+discover = false

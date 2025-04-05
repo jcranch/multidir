@@ -1,0 +1,5 @@
+*.html
+.stack-work/
+dist-newstyle/
+*.lock
+*~
